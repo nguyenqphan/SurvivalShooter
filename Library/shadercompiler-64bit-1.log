@@ -408,3 +408,7 @@ Cmd: compileSnippet
   api=0 type=0 insize=934 outsize=6324 kw=POINT SHADOWS_OFF _NORMALMAP pd= ok=1
 Cmd: compileSnippet
   api=0 type=1 insize=934 outsize=6 kw=POINT SHADOWS_OFF _NORMALMAP pd= ok=1
+Cmd: compileSnippet
+  api=0 type=0 insize=934 outsize=5999 kw=POINT SHADOWS_OFF _ALPHABLEND_ON pd= ok=1
+Cmd: compileSnippet
+  api=0 type=1 insize=934 outsize=6 kw=POINT SHADOWS_OFF _ALPHABLEND_ON pd= ok=1
