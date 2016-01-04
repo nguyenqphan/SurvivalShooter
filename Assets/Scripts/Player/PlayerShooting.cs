@@ -34,7 +34,7 @@ public class PlayerShooting : MonoBehaviour
 
 		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
         {
-            Shoot ();
+            //Shoot ();
         }
 
         if(timer >= timeBetweenBullets * effectsDisplayTime)
@@ -51,7 +51,7 @@ public class PlayerShooting : MonoBehaviour
     }
 
 
-    void Shoot ()
+    public void Shoot (Vector3 shootDir)
     {
         timer = 0f;
 
@@ -66,7 +66,8 @@ public class PlayerShooting : MonoBehaviour
         gunLine.SetPosition (0, transform.position);
 
         shootRay.origin = transform.position;
-        shootRay.direction = transform.forward;
+       // shootRay.direction = transform.forward;
+		shootRay.direction = shootDir;
 
         if(Physics.Raycast (shootRay, out shootHit, range, shootableMask))
         {
